@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="hbmaxModelStoreContainer" CdmEntityContainer="hbmaxEntities">
+    <EntitySetMapping Name="TB_USUARIO">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_USUARIO">
+        <MappingFragment StoreEntitySet="TB_USUARIO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Senha" ColumnName="Senha" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="Trocar_Senha" ColumnName="Trocar_Senha" />
+          <ScalarProperty Name="Email_Confirmado" ColumnName="Email_Confirmado" />
+          <ScalarProperty Name="Data_Criacao" ColumnName="Data_Criacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ENDERECO">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_ENDERECO">
+        <MappingFragment StoreEntitySet="TB_ENDERECO">
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="CIDADE" ColumnName="CIDADE" />
+          <ScalarProperty Name="BAIRRO" ColumnName="BAIRRO" />
+          <ScalarProperty Name="LOGRADOURO" ColumnName="LOGRADOURO" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_UNIDADE">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_UNIDADE">
+        <MappingFragment StoreEntitySet="TB_UNIDADE">
+          <ScalarProperty Name="DESCRICAO" ColumnName="DESCRICAO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_DETALHE_USUARIO">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_DETALHE_USUARIO">
+        <MappingFragment StoreEntitySet="TB_DETALHE_USUARIO">
+          <ScalarProperty Name="Nivel_Qualificacao" ColumnName="Nivel_Qualificacao" />
+          <ScalarProperty Name="Celuar" ColumnName="Celuar" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="CNPJ" ColumnName="CNPJ" />
+          <ScalarProperty Name="CPF" ColumnName="CPF" />
+          <ScalarProperty Name="RG" ColumnName="RG" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Cidade" ColumnName="Cidade" />
+          <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+          <ScalarProperty Name="Complemento" ColumnName="Complemento" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="Nome_Razao" ColumnName="Nome_Razao" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ESTOQUE">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_ESTOQUE">
+        <MappingFragment StoreEntitySet="TB_ESTOQUE">
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Motivo" ColumnName="Motivo" />
+          <ScalarProperty Name="Qtd" ColumnName="Qtd" />
+          <ScalarProperty Name="ID_Produto" ColumnName="ID_Produto" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CLIENTE">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_CLIENTE">
+        <MappingFragment StoreEntitySet="TB_CLIENTE">
+          <ScalarProperty Name="Indicacao" ColumnName="Indicacao" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="ComoSoube" ColumnName="ComoSoube" />
+          <ScalarProperty Name="DataVisita" ColumnName="DataVisita" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_VENDA">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_VENDA">
+        <MappingFragment StoreEntitySet="TB_VENDA">
+          <ScalarProperty Name="Observacao" ColumnName="Observacao" />
+          <ScalarProperty Name="Tipo_Acesso" ColumnName="Tipo_Acesso" />
+          <ScalarProperty Name="Data_Insercao" ColumnName="Data_Insercao" />
+          <ScalarProperty Name="Total_Produtos" ColumnName="Total_Produtos" />
+          <ScalarProperty Name="Forma_Pagamento" ColumnName="Forma_Pagamento" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="ID_Cliente" ColumnName="ID_Cliente" />
+          <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_DESPESA">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_DESPESA">
+        <MappingFragment StoreEntitySet="TB_DESPESA">
+          <ScalarProperty Name="ValorTotal" ColumnName="ValorTotal" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_VENDA_PRODUTO">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_VENDA_PRODUTO">
+        <MappingFragment StoreEntitySet="TB_VENDA_PRODUTO">
+          <ScalarProperty Name="Preco_Final" ColumnName="Preco_Final" />
+          <ScalarProperty Name="Desconto" ColumnName="Desconto" />
+          <ScalarProperty Name="Preco" ColumnName="Preco" />
+          <ScalarProperty Name="ID_Produto" ColumnName="ID_Produto" />
+          <ScalarProperty Name="ID_Venda" ColumnName="ID_Venda" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ACESSO">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_ACESSO">
+        <MappingFragment StoreEntitySet="TB_ACESSO">
+          <ScalarProperty Name="DataFinal" ColumnName="DataFinal" />
+          <ScalarProperty Name="DataInicio" ColumnName="DataInicio" />
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_TRANSACOES">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_TRANSACOES">
+        <MappingFragment StoreEntitySet="TB_TRANSACOES">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Sender" ColumnName="Sender" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="DataHora" ColumnName="DataHora" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ABERTURA_CAIXA">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_ABERTURA_CAIXA">
+        <MappingFragment StoreEntitySet="TB_ABERTURA_CAIXA">
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PRODUTO">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_PRODUTO">
+        <MappingFragment StoreEntitySet="TB_PRODUTO">
+          <ScalarProperty Name="AFETA_ESTOQUE" ColumnName="AFETA_ESTOQUE" />
+          <ScalarProperty Name="GASTO_ESTIMADO" ColumnName="GASTO_ESTIMADO" />
+          <ScalarProperty Name="ESTOQUE_MINIMO" ColumnName="ESTOQUE_MINIMO" />
+          <ScalarProperty Name="QTD_ESTOQUE" ColumnName="QTD_ESTOQUE" />
+          <ScalarProperty Name="PRECO" ColumnName="PRECO" />
+          <ScalarProperty Name="PV" ColumnName="PV" />
+          <ScalarProperty Name="UNID" ColumnName="UNID" />
+          <ScalarProperty Name="DESCRICAO" ColumnName="DESCRICAO" />
+          <ScalarProperty Name="COD_HERBALIFE" ColumnName="COD_HERBALIFE" />
+          <ScalarProperty Name="ID_EMPRESA" ColumnName="ID_EMPRESA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PRODUTO_DEFAULT">
+      <EntityTypeMapping TypeName="hbmaxModel.TB_PRODUTO_DEFAULT">
+        <MappingFragment StoreEntitySet="TB_PRODUTO_DEFAULT">
+          <ScalarProperty Name="AFETA_ESTOQUE" ColumnName="AFETA_ESTOQUE" />
+          <ScalarProperty Name="PRECO" ColumnName="PRECO" />
+          <ScalarProperty Name="PV" ColumnName="PV" />
+          <ScalarProperty Name="UNID" ColumnName="UNID" />
+          <ScalarProperty Name="DESCRICAO" ColumnName="DESCRICAO" />
+          <ScalarProperty Name="COD_HERBALIFE" ColumnName="COD_HERBALIFE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

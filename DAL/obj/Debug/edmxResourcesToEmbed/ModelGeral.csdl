@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="hbmaxModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="hbmaxEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TB_USUARIO" EntityType="hbmaxModel.TB_USUARIO" />
+    <EntitySet Name="TB_ENDERECO" EntityType="hbmaxModel.TB_ENDERECO" />
+    <EntitySet Name="TB_UNIDADE" EntityType="hbmaxModel.TB_UNIDADE" />
+    <EntitySet Name="TB_DETALHE_USUARIO" EntityType="hbmaxModel.TB_DETALHE_USUARIO" />
+    <AssociationSet Name="FK__TB_DETALH__ID_US__1BFD2C07" Association="hbmaxModel.FK__TB_DETALH__ID_US__1BFD2C07">
+      <End Role="TB_USUARIO" EntitySet="TB_USUARIO" />
+      <End Role="TB_DETALHE_USUARIO" EntitySet="TB_DETALHE_USUARIO" />
+    </AssociationSet>
+    <EntitySet Name="TB_ESTOQUE" EntityType="hbmaxModel.TB_ESTOQUE" />
+    <EntitySet Name="TB_CLIENTE" EntityType="hbmaxModel.TB_CLIENTE" />
+    <AssociationSet Name="FK__TB_CLIENT__ID_Us__68487DD7" Association="hbmaxModel.FK__TB_CLIENT__ID_Us__68487DD7">
+      <End Role="TB_USUARIO" EntitySet="TB_USUARIO" />
+      <End Role="TB_CLIENTE" EntitySet="TB_CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_CLIENT__Indic__693CA210" Association="hbmaxModel.FK__TB_CLIENT__Indic__693CA210">
+      <End Role="TB_CLIENTE" EntitySet="TB_CLIENTE" />
+      <End Role="TB_CLIENTE1" EntitySet="TB_CLIENTE" />
+    </AssociationSet>
+    <EntitySet Name="TB_VENDA" EntityType="hbmaxModel.TB_VENDA" />
+    <AssociationSet Name="FK__TB_VENDA__ID_Cli__6D0D32F4" Association="hbmaxModel.FK__TB_VENDA__ID_Cli__6D0D32F4">
+      <End Role="TB_CLIENTE" EntitySet="TB_CLIENTE" />
+      <End Role="TB_VENDA" EntitySet="TB_VENDA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_VENDA__ID_Usu__6C190EBB" Association="hbmaxModel.FK__TB_VENDA__ID_Usu__6C190EBB">
+      <End Role="TB_USUARIO" EntitySet="TB_USUARIO" />
+      <End Role="TB_VENDA" EntitySet="TB_VENDA" />
+    </AssociationSet>
+    <EntitySet Name="TB_DESPESA" EntityType="hbmaxModel.TB_DESPESA" />
+    <AssociationSet Name="FK__TB_DESPES__ID_Us__73BA3083" Association="hbmaxModel.FK__TB_DESPES__ID_Us__73BA3083">
+      <End Role="TB_USUARIO" EntitySet="TB_USUARIO" />
+      <End Role="TB_DESPESA" EntitySet="TB_DESPESA" />
+    </AssociationSet>
+    <EntitySet Name="TB_VENDA_PRODUTO" EntityType="hbmaxModel.TB_VENDA_PRODUTO" />
+    <AssociationSet Name="FK__TB_VENDA___ID_Ve__6FE99F9F" Association="hbmaxModel.FK__TB_VENDA___ID_Ve__6FE99F9F">
+      <End Role="TB_VENDA" EntitySet="TB_VENDA" />
+      <End Role="TB_VENDA_PRODUTO" EntitySet="TB_VENDA_PRODUTO" />
+    </AssociationSet>
+    <EntitySet Name="TB_ACESSO" EntityType="hbmaxModel.TB_ACESSO" />
+    <AssociationSet Name="FK__TB_ACESSO__ID_US__778AC167" Association="hbmaxModel.FK__TB_ACESSO__ID_US__778AC167">
+      <End Role="TB_USUARIO" EntitySet="TB_USUARIO" />
+      <End Role="TB_ACESSO" EntitySet="TB_ACESSO" />
+    </AssociationSet>
+    <EntitySet Name="TB_TRANSACOES" EntityType="hbmaxModel.TB_TRANSACOES" />
+    <EntitySet Name="TB_ABERTURA_CAIXA" EntityType="hbmaxModel.TB_ABERTURA_CAIXA" />
+    <AssociationSet Name="FK__TB_ABERTU__ID_Us__00200768" Association="hbmaxModel.FK__TB_ABERTU__ID_Us__00200768">
+      <End Role="TB_USUARIO" EntitySet="TB_USUARIO" />
+      <End Role="TB_ABERTURA_CAIXA" EntitySet="TB_ABERTURA_CAIXA" />
+    </AssociationSet>
+    <EntitySet Name="TB_PRODUTO" EntityType="hbmaxModel.TB_PRODUTO" />
+    <AssociationSet Name="FK__TB_ESTOQU__ID_Pr__5812160E" Association="hbmaxModel.FK__TB_ESTOQU__ID_Pr__5812160E">
+      <End Role="TB_PRODUTO" EntitySet="TB_PRODUTO" />
+      <End Role="TB_ESTOQUE" EntitySet="TB_ESTOQUE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_PRODUT__ID_EM__4D94879B" Association="hbmaxModel.FK__TB_PRODUT__ID_EM__4D94879B">
+      <End Role="TB_USUARIO" EntitySet="TB_USUARIO" />
+      <End Role="TB_PRODUTO" EntitySet="TB_PRODUTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_PRODUTO__UNID__4E88ABD4" Association="hbmaxModel.FK__TB_PRODUTO__UNID__4E88ABD4">
+      <End Role="TB_UNIDADE" EntitySet="TB_UNIDADE" />
+      <End Role="TB_PRODUTO" EntitySet="TB_PRODUTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_PRODUTO__UNID__5535A963" Association="hbmaxModel.FK__TB_PRODUTO__UNID__5535A963">
+      <End Role="TB_UNIDADE" EntitySet="TB_UNIDADE" />
+      <End Role="TB_PRODUTO" EntitySet="TB_PRODUTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TB_VENDA___ID_Pr__70DDC3D8" Association="hbmaxModel.FK__TB_VENDA___ID_Pr__70DDC3D8">
+      <End Role="TB_PRODUTO" EntitySet="TB_PRODUTO" />
+      <End Role="TB_VENDA_PRODUTO" EntitySet="TB_VENDA_PRODUTO" />
+    </AssociationSet>
+    <EntitySet Name="TB_PRODUTO_DEFAULT" EntityType="hbmaxModel.TB_PRODUTO_DEFAULT" />
+  </EntityContainer>
+  <EntityType Name="TB_USUARIO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Senha" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Telefone" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Trocar_Senha" Type="Boolean" Nullable="false" />
+    <Property Name="Email_Confirmado" Type="Boolean" Nullable="false" />
+    <Property Name="Data_Criacao" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="TB_DETALHE_USUARIO" Relationship="hbmaxModel.FK__TB_DETALH__ID_US__1BFD2C07" FromRole="TB_USUARIO" ToRole="TB_DETALHE_USUARIO" />
+    <NavigationProperty Name="TB_CLIENTE" Relationship="hbmaxModel.FK__TB_CLIENT__ID_Us__68487DD7" FromRole="TB_USUARIO" ToRole="TB_CLIENTE" />
+    <NavigationProperty Name="TB_VENDA" Relationship="hbmaxModel.FK__TB_VENDA__ID_Usu__6C190EBB" FromRole="TB_USUARIO" ToRole="TB_VENDA" />
+    <NavigationProperty Name="TB_DESPESA" Relationship="hbmaxModel.FK__TB_DESPES__ID_Us__73BA3083" FromRole="TB_USUARIO" ToRole="TB_DESPESA" />
+    <NavigationProperty Name="TB_ACESSO" Relationship="hbmaxModel.FK__TB_ACESSO__ID_US__778AC167" FromRole="TB_USUARIO" ToRole="TB_ACESSO" />
+    <NavigationProperty Name="TB_ABERTURA_CAIXA" Relationship="hbmaxModel.FK__TB_ABERTU__ID_Us__00200768" FromRole="TB_USUARIO" ToRole="TB_ABERTURA_CAIXA" />
+    <NavigationProperty Name="TB_PRODUTO" Relationship="hbmaxModel.FK__TB_PRODUT__ID_EM__4D94879B" FromRole="TB_USUARIO" ToRole="TB_PRODUTO" />
+  </EntityType>
+  <EntityType Name="TB_ENDERECO">
+    <Key>
+      <PropertyRef Name="CEP" />
+    </Key>
+    <Property Type="Int32" Name="CEP" Nullable="false" />
+    <Property Type="String" Name="LOGRADOURO" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BAIRRO" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CIDADE" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ESTADO" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TB_UNIDADE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="DESCRICAO" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TB_PRODUTO" Relationship="hbmaxModel.FK__TB_PRODUTO__UNID__4E88ABD4" FromRole="TB_UNIDADE" ToRole="TB_PRODUTO" />
+    <NavigationProperty Name="TB_PRODUTO1" Relationship="hbmaxModel.FK__TB_PRODUTO__UNID__5535A963" FromRole="TB_UNIDADE" ToRole="TB_PRODUTO" />
+  </EntityType>
+  <EntityType Name="TB_DETALHE_USUARIO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ID_USUARIO" Nullable="false" />
+    <Property Type="String" Name="Nome_Razao" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CEP" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Endereco" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Numero" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Complemento" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Bairro" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Cidade" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Estado" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="RG" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CPF" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CNPJ" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Telefone" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Celuar" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nivel_Qualificacao" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TB_USUARIO" Relationship="hbmaxModel.FK__TB_DETALH__ID_US__1BFD2C07" FromRole="TB_DETALHE_USUARIO" ToRole="TB_USUARIO" />
+  </EntityType>
+  <Association Name="FK__TB_DETALH__ID_US__1BFD2C07">
+    <End Type="hbmaxModel.TB_USUARIO" Role="TB_USUARIO" Multiplicity="1" />
+    <End Type="hbmaxModel.TB_DETALHE_USUARIO" Role="TB_DETALHE_USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USUARIO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_DETALHE_USUARIO">
+        <PropertyRef Name="ID_USUARIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TB_ESTOQUE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ID_Produto" Nullable="false" />
+    <Property Type="Int32" Name="Qtd" Nullable="false" />
+    <Property Type="String" Name="Motivo" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Data" Nullable="false" />
+    <NavigationProperty Name="TB_PRODUTO" Relationship="hbmaxModel.FK__TB_ESTOQU__ID_Pr__5812160E" FromRole="TB_ESTOQUE" ToRole="TB_PRODUTO" />
+  </EntityType>
+  <EntityType Name="TB_CLIENTE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ID_Usuario" Nullable="false" />
+    <Property Type="Int32" Name="Codigo" Nullable="false" />
+    <Property Type="String" Name="Nome" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Telefone" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DataVisita" Nullable="false" />
+    <Property Type="String" Name="ComoSoube" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Tipo" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Indicacao" />
+    <NavigationProperty Name="TB_USUARIO" Relationship="hbmaxModel.FK__TB_CLIENT__ID_Us__68487DD7" FromRole="TB_CLIENTE" ToRole="TB_USUARIO" />
+    <NavigationProperty Name="TB_CLIENTE1" Relationship="hbmaxModel.FK__TB_CLIENT__Indic__693CA210" FromRole="TB_CLIENTE" ToRole="TB_CLIENTE1" />
+    <NavigationProperty Name="TB_CLIENTE2" Relationship="hbmaxModel.FK__TB_CLIENT__Indic__693CA210" FromRole="TB_CLIENTE1" ToRole="TB_CLIENTE" />
+    <NavigationProperty Name="TB_VENDA" Relationship="hbmaxModel.FK__TB_VENDA__ID_Cli__6D0D32F4" FromRole="TB_CLIENTE" ToRole="TB_VENDA" />
+  </EntityType>
+  <Association Name="FK__TB_CLIENT__ID_Us__68487DD7">
+    <End Type="hbmaxModel.TB_USUARIO" Role="TB_USUARIO" Multiplicity="1" />
+    <End Type="hbmaxModel.TB_CLIENTE" Role="TB_CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USUARIO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_CLIENTE">
+        <PropertyRef Name="ID_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_CLIENT__Indic__693CA210">
+    <End Type="hbmaxModel.TB_CLIENTE" Role="TB_CLIENTE" Multiplicity="0..1" />
+    <End Type="hbmaxModel.TB_CLIENTE" Role="TB_CLIENTE1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CLIENTE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_CLIENTE1">
+        <PropertyRef Name="Indicacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TB_VENDA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ID_Usuario" Nullable="false" />
+    <Property Type="Int32" Name="ID_Cliente" Nullable="false" />
+    <Property Type="DateTime" Name="Data" Nullable="false" />
+    <Property Type="String" Name="Forma_Pagamento" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Total_Produtos" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="DateTime" Name="Data_Insercao" Nullable="false" />
+    <Property Type="String" Name="Tipo_Acesso" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Observacao" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TB_CLIENTE" Relationship="hbmaxModel.FK__TB_VENDA__ID_Cli__6D0D32F4" FromRole="TB_VENDA" ToRole="TB_CLIENTE" />
+    <NavigationProperty Name="TB_USUARIO" Relationship="hbmaxModel.FK__TB_VENDA__ID_Usu__6C190EBB" FromRole="TB_VENDA" ToRole="TB_USUARIO" />
+    <NavigationProperty Name="TB_VENDA_PRODUTO" Relationship="hbmaxModel.FK__TB_VENDA___ID_Ve__6FE99F9F" FromRole="TB_VENDA" ToRole="TB_VENDA_PRODUTO" />
+  </EntityType>
+  <Association Name="FK__TB_VENDA__ID_Cli__6D0D32F4">
+    <End Type="hbmaxModel.TB_CLIENTE" Role="TB_CLIENTE" Multiplicity="1" />
+    <End Type="hbmaxModel.TB_VENDA" Role="TB_VENDA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CLIENTE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_VENDA">
+        <PropertyRef Name="ID_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_VENDA__ID_Usu__6C190EBB">
+    <End Type="hbmaxModel.TB_USUARIO" Role="TB_USUARIO" Multiplicity="1" />
+    <End Type="hbmaxModel.TB_VENDA" Role="TB_VENDA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USUARIO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_VENDA">
+        <PropertyRef Name="ID_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TB_DESPESA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ID_Usuario" Nullable="false" />
+    <Property Type="DateTime" Name="Data" Nullable="false" />
+    <Property Type="String" Name="Descricao" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="ValorTotal" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="TB_USUARIO" Relationship="hbmaxModel.FK__TB_DESPES__ID_Us__73BA3083" FromRole="TB_DESPESA" ToRole="TB_USUARIO" />
+  </EntityType>
+  <Association Name="FK__TB_DESPES__ID_Us__73BA3083">
+    <End Type="hbmaxModel.TB_USUARIO" Role="TB_USUARIO" Multiplicity="1" />
+    <End Type="hbmaxModel.TB_DESPESA" Role="TB_DESPESA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USUARIO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_DESPESA">
+        <PropertyRef Name="ID_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TB_VENDA_PRODUTO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ID_Venda" Nullable="false" />
+    <Property Type="Int32" Name="ID_Produto" Nullable="false" />
+    <Property Type="Decimal" Name="Preco" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Desconto" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="Preco_Final" Nullable="false" Precision="19" Scale="4" />
+    <NavigationProperty Name="TB_VENDA" Relationship="hbmaxModel.FK__TB_VENDA___ID_Ve__6FE99F9F" FromRole="TB_VENDA_PRODUTO" ToRole="TB_VENDA" />
+    <NavigationProperty Name="TB_PRODUTO" Relationship="hbmaxModel.FK__TB_VENDA___ID_Pr__70DDC3D8" FromRole="TB_VENDA_PRODUTO" ToRole="TB_PRODUTO" />
+  </EntityType>
+  <Association Name="FK__TB_VENDA___ID_Ve__6FE99F9F">
+    <End Type="hbmaxModel.TB_VENDA" Role="TB_VENDA" Multiplicity="1" />
+    <End Type="hbmaxModel.TB_VENDA_PRODUTO" Role="TB_VENDA_PRODUTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_VENDA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_VENDA_PRODUTO">
+        <PropertyRef Name="ID_Venda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TB_ACESSO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ID_USUARIO" />
+    <Property Type="DateTime" Name="DataInicio" Nullable="false" />
+    <Property Type="DateTime" Name="DataFinal" Nullable="false" />
+    <NavigationProperty Name="TB_USUARIO" Relationship="hbmaxModel.FK__TB_ACESSO__ID_US__778AC167" FromRole="TB_ACESSO" ToRole="TB_USUARIO" />
+  </EntityType>
+  <Association Name="FK__TB_ACESSO__ID_US__778AC167">
+    <End Type="hbmaxModel.TB_USUARIO" Role="TB_USUARIO" Multiplicity="0..1" />
+    <End Type="hbmaxModel.TB_ACESSO" Role="TB_ACESSO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USUARIO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_ACESSO">
+        <PropertyRef Name="ID_USUARIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TB_TRANSACOES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="DataHora" Nullable="false" />
+    <Property Type="String" Name="Codigo" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Sender" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Status" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ABERTURA_CAIXA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ID_Usuario" Nullable="false" />
+    <Property Type="DateTime" Name="Data" Nullable="false" />
+    <Property Type="Decimal" Name="Valor" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="TB_USUARIO" Relationship="hbmaxModel.FK__TB_ABERTU__ID_Us__00200768" FromRole="TB_ABERTURA_CAIXA" ToRole="TB_USUARIO" />
+  </EntityType>
+  <Association Name="FK__TB_ABERTU__ID_Us__00200768">
+    <End Type="hbmaxModel.TB_USUARIO" Role="TB_USUARIO" Multiplicity="1" />
+    <End Type="hbmaxModel.TB_ABERTURA_CAIXA" Role="TB_ABERTURA_CAIXA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USUARIO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_ABERTURA_CAIXA">
+        <PropertyRef Name="ID_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TB_PRODUTO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ID_EMPRESA" Nullable="false" />
+    <Property Type="Int32" Name="COD_HERBALIFE" Nullable="false" />
+    <Property Type="String" Name="DESCRICAO" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="UNID" Nullable="false" />
+    <Property Type="Double" Name="PV" Nullable="false" />
+    <Property Type="Decimal" Name="PRECO" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="QTD_ESTOQUE" Nullable="false" />
+    <Property Type="Int32" Name="ESTOQUE_MINIMO" Nullable="false" />
+    <Property Type="Decimal" Name="GASTO_ESTIMADO" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="AFETA_ESTOQUE" Nullable="false" />
+    <NavigationProperty Name="TB_ESTOQUE" Relationship="hbmaxModel.FK__TB_ESTOQU__ID_Pr__5812160E" FromRole="TB_PRODUTO" ToRole="TB_ESTOQUE" />
+    <NavigationProperty Name="TB_USUARIO" Relationship="hbmaxModel.FK__TB_PRODUT__ID_EM__4D94879B" FromRole="TB_PRODUTO" ToRole="TB_USUARIO" />
+    <NavigationProperty Name="TB_UNIDADE" Relationship="hbmaxModel.FK__TB_PRODUTO__UNID__4E88ABD4" FromRole="TB_PRODUTO" ToRole="TB_UNIDADE" />
+    <NavigationProperty Name="TB_UNIDADE1" Relationship="hbmaxModel.FK__TB_PRODUTO__UNID__5535A963" FromRole="TB_PRODUTO" ToRole="TB_UNIDADE" />
+    <NavigationProperty Name="TB_VENDA_PRODUTO" Relationship="hbmaxModel.FK__TB_VENDA___ID_Pr__70DDC3D8" FromRole="TB_PRODUTO" ToRole="TB_VENDA_PRODUTO" />
+  </EntityType>
+  <Association Name="FK__TB_ESTOQU__ID_Pr__5812160E">
+    <End Type="hbmaxModel.TB_PRODUTO" Role="TB_PRODUTO" Multiplicity="1" />
+    <End Type="hbmaxModel.TB_ESTOQUE" Role="TB_ESTOQUE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_PRODUTO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_ESTOQUE">
+        <PropertyRef Name="ID_Produto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_PRODUT__ID_EM__4D94879B">
+    <End Type="hbmaxModel.TB_USUARIO" Role="TB_USUARIO" Multiplicity="1" />
+    <End Type="hbmaxModel.TB_PRODUTO" Role="TB_PRODUTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USUARIO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_PRODUTO">
+        <PropertyRef Name="ID_EMPRESA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_PRODUTO__UNID__4E88ABD4">
+    <End Type="hbmaxModel.TB_UNIDADE" Role="TB_UNIDADE" Multiplicity="1" />
+    <End Type="hbmaxModel.TB_PRODUTO" Role="TB_PRODUTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_UNIDADE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_PRODUTO">
+        <PropertyRef Name="UNID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_PRODUTO__UNID__5535A963">
+    <End Type="hbmaxModel.TB_UNIDADE" Role="TB_UNIDADE" Multiplicity="1" />
+    <End Type="hbmaxModel.TB_PRODUTO" Role="TB_PRODUTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_UNIDADE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_PRODUTO">
+        <PropertyRef Name="UNID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TB_VENDA___ID_Pr__70DDC3D8">
+    <End Type="hbmaxModel.TB_PRODUTO" Role="TB_PRODUTO" Multiplicity="1" />
+    <End Type="hbmaxModel.TB_VENDA_PRODUTO" Role="TB_VENDA_PRODUTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_PRODUTO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_VENDA_PRODUTO">
+        <PropertyRef Name="ID_Produto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TB_PRODUTO_DEFAULT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="COD_HERBALIFE" Nullable="false" />
+    <Property Type="String" Name="DESCRICAO" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="UNID" Nullable="false" />
+    <Property Type="Double" Name="PV" Nullable="false" />
+    <Property Type="Decimal" Name="PRECO" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="AFETA_ESTOQUE" Nullable="false" />
+  </EntityType>
+</Schema>

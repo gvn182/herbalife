@@ -1,0 +1,9 @@
+C:\Users\Giovanni\Dropbox\Herbalife\Website\Template\bin\Template.dll
+C:\Users\Giovanni\Dropbox\Herbalife\Website\Template\bin\Template.pdb
+C:\Users\Giovanni\Dropbox\Herbalife\Website\Template\obj\Debug\Template.dll
+C:\Users\Giovanni\Dropbox\Herbalife\Website\Template\obj\Debug\Template.pdb
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\Template\bin\Template.dll
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\Template\bin\Template.pdb
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\Template\obj\Debug\Template.dll
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\Template\obj\Debug\Template.pdb
+C:\Users\Giovanni\Dropbox\Herbalife\Website\Template\obj\Debug\Template.csprojResolveAssemblyReference.cache

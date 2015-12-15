@@ -1,0 +1,12 @@
+C:\Users\Giovanni\Dropbox\Herbalife\Website\DAL\bin\Debug\DAL.dll.config
+C:\Users\Giovanni\Dropbox\Herbalife\Website\DAL\bin\Debug\DAL.dll
+C:\Users\Giovanni\Dropbox\Herbalife\Website\DAL\bin\Debug\DAL.pdb
+C:\Users\Giovanni\Dropbox\Herbalife\Website\DAL\obj\Debug\DAL.dll
+C:\Users\Giovanni\Dropbox\Herbalife\Website\DAL\obj\Debug\DAL.pdb
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\DAL\bin\Debug\DAL.dll.config
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\DAL\bin\Debug\DAL.dll
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\DAL\bin\Debug\DAL.pdb
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\DAL\obj\Debug\DAL.dll
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\DAL\obj\Debug\DAL.pdb
+C:\Users\Giovanni\Dropbox\Herbalife\Website\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

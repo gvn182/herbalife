@@ -1,0 +1,5 @@
+D:\iDevelop TFS\FIT30\Flexitonus\R1\QA\Dev\Src\Uol.PagSeguro\bin\Release\Uol.PagSeguro.dll
+D:\iDevelop TFS\FIT30\Flexitonus\R1\QA\Dev\Src\Uol.PagSeguro\bin\Release\Uol.PagSeguro.pdb
+D:\iDevelop TFS\FIT30\Flexitonus\R1\QA\Dev\Src\Uol.PagSeguro\obj\Release\Uol.PagSeguro.csprojResolveAssemblyReference.cache
+D:\iDevelop TFS\FIT30\Flexitonus\R1\QA\Dev\Src\Uol.PagSeguro\obj\Release\Uol.PagSeguro.dll
+D:\iDevelop TFS\FIT30\Flexitonus\R1\QA\Dev\Src\Uol.PagSeguro\obj\Release\Uol.PagSeguro.pdb

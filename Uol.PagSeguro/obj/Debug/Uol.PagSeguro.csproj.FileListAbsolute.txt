@@ -1,0 +1,38 @@
+C:\Users\Barbara\Downloads\dotnet-master (1)\dotnet-master\source\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.XML
+C:\Users\Barbara\Downloads\dotnet-master (1)\dotnet-master\source\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.dll
+C:\Users\Barbara\Downloads\dotnet-master (1)\dotnet-master\source\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.pdb
+C:\Users\Barbara\Downloads\dotnet-master (1)\dotnet-master\source\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.dll
+C:\Users\Barbara\Downloads\dotnet-master (1)\dotnet-master\source\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.pdb
+D:\iDevelop TFS\FIT30\Flexitonus\R1\QA\Dev\Src\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.XML
+D:\iDevelop TFS\FIT30\Flexitonus\R1\QA\Dev\Src\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.dll
+D:\iDevelop TFS\FIT30\Flexitonus\R1\QA\Dev\Src\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.pdb
+D:\iDevelop TFS\FIT30\Flexitonus\R1\QA\Dev\Src\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.dll
+D:\iDevelop TFS\FIT30\Flexitonus\R1\QA\Dev\Src\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.pdb
+D:\iDevelop TFS\FIT30\Flexitonus\R1\QA\Dev\Src\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.csprojResolveAssemblyReference.cache
+C:\Users\Barbara\Desktop\PagSeguro\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.XML
+C:\Users\Barbara\Desktop\PagSeguro\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.dll
+C:\Users\Barbara\Desktop\PagSeguro\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.pdb
+C:\Users\Barbara\Desktop\PagSeguro\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.csprojResolveAssemblyReference.cache
+C:\Users\Barbara\Desktop\PagSeguro\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.dll
+C:\Users\Barbara\Desktop\PagSeguro\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.pdb
+C:\Users\Giovanni.saraiva\Downloads\PagSeguro-com-pagamento-recorrente\PagSeguro\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.XML
+C:\Users\Giovanni.saraiva\Downloads\PagSeguro-com-pagamento-recorrente\PagSeguro\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.dll
+C:\Users\Giovanni.saraiva\Downloads\PagSeguro-com-pagamento-recorrente\PagSeguro\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.pdb
+C:\Users\Giovanni.saraiva\Downloads\PagSeguro-com-pagamento-recorrente\PagSeguro\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.csprojResolveAssemblyReference.cache
+C:\Users\Giovanni.saraiva\Downloads\PagSeguro-com-pagamento-recorrente\PagSeguro\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.dll
+C:\Users\Giovanni.saraiva\Downloads\PagSeguro-com-pagamento-recorrente\PagSeguro\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.pdb
+C:\Users\Giovanni\Dropbox\Herbalife\Sample project\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.dll
+C:\Users\Giovanni\Dropbox\Herbalife\Sample project\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.pdb
+C:\Users\Giovanni\Dropbox\Herbalife\Sample project\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.csprojResolveAssemblyReference.cache
+C:\Users\Giovanni\Dropbox\Herbalife\Sample project\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.dll
+C:\Users\Giovanni\Dropbox\Herbalife\Sample project\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.pdb
+C:\Users\Giovanni\Dropbox\Herbalife\Website\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.dll
+C:\Users\Giovanni\Dropbox\Herbalife\Website\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.pdb
+C:\Users\Giovanni\Dropbox\Herbalife\Website\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.csprojResolveAssemblyReference.cache
+C:\Users\Giovanni\Dropbox\Herbalife\Website\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.dll
+C:\Users\Giovanni\Dropbox\Herbalife\Website\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.pdb
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.dll
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\Uol.PagSeguro\bin\Debug\Uol.PagSeguro.pdb
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.csprojResolveAssemblyReference.cache
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.dll
+C:\Giovanni\Dropbox\Dropbox\Herbalife\Website\Uol.PagSeguro\obj\Debug\Uol.PagSeguro.pdb
